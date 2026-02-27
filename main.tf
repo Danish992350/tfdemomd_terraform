@@ -13,6 +13,7 @@ data "aws_ami" "amazon_linux" {
   }
 }
 
+
 data "aws_vpc" "default" {
   default = true
 }
@@ -26,7 +27,7 @@ data "aws_subnets" "default" {
 
 resource "aws_instance" "demo_123ec2" {
   ami           = data.aws_ami.amazon_linux.id
-  instance_type = "t2.micro"
+  instance_type = "t3.micro"
   subnet_id     = data.aws_subnets.default.ids[0]
 
   tags = {

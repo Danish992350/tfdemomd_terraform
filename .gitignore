@@ -2,9 +2,7 @@
 .terraform/
 *.tfstate
 *.tfstate.*
-*.tfplan
-plan.json
-plan.md
+
 
 # IDE
 .vscode/
