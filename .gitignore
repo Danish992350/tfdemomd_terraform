@@ -3,6 +3,8 @@
 *.tfstate
 *.tfstate.*
 
-
+*.tfplan
+*.tfstate.backup
+plan.json
 # IDE
 .vscode/
