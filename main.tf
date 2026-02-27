@@ -29,10 +29,10 @@ data "aws_subnets" "default" {
 
 resource "aws_instance" "demo_123ec2" {
   ami           = data.aws_ami.amazon_linux.id
-  instance_type = "t3.micro"
+  instance_type = "t2.micro"
   subnet_id     = data.aws_subnets.default.ids[0]
 
   tags = {
-    Name = "tf-demo-ec2"
+    Name = "tf-demo-testing"
   }
 }
