@@ -14,6 +14,8 @@ data "aws_ami" "amazon_linux" {
 }
 
 
+
+
 data "aws_vpc" "default" {
   default = true
 }
