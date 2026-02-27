@@ -48,7 +48,6 @@ jobs:
         run: |
           docker run -v ${{ github.workspace }}:/data oocx/tfplan2md /data/plan.json > plan.md
 
-      # 9️⃣ Upload Plan Report as Artifact
       - name: Upload Plan Report
         uses: actions/upload-artifact@v4
         with:
